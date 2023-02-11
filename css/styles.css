@@ -274,6 +274,17 @@ a.bottom-link:focus {
 }
 /*our-crew end*/
 
+/*Our customers start*/
+
+.our-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
+/*Our customers end*/
+
 /*footer start*/
 
 .little-black-box {
@@ -367,3 +378,27 @@ only portfolio styles start
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /*projects end*/
+
+/*icons start*/
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+  transition-duration: 0.3s;
+  fill: var(--secondary-font-color);
+}
+
+.icon:hover {
+  fill: var(--brand-color);
+}
+/*icons end*/
