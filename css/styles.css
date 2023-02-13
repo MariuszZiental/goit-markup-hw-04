@@ -85,15 +85,16 @@ h4 {
   letter-spacing: 0.02em;
 }
 .contact-link-box a {
+  display: flex;
+  align-items: center;
   color: var(--main-font-color);
 }
 .icon-contact-link {
   display: inline-flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 16px;
-  width: 12px;
+  margin-right: 10px;
+  height: 30px;
+  width: 20px;
 }
 
 
@@ -235,6 +236,10 @@ a.bottom-link:focus {
 .list-of-rectangles {
   display: flex;
   padding: 0px;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 30px;
+
 }
 .rectangle-1 {
   height: 120px;
@@ -283,6 +288,9 @@ a.bottom-link:focus {
 }
 .list-of-notes {
 display: flex;
+justify-content: center;
+column-gap: 30px;
+padding-left: 0;
 }
 
 /*our-strengths start*/
@@ -345,8 +353,14 @@ display: flex;
 /*Our customers start*/
 
 .our-customers {
-  padding-top: 94px;
   padding-bottom: 94px;
+}
+.customers-logos {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+column-gap: 30px;
 }
 
 /*Our customers end*/
@@ -467,30 +481,56 @@ only portfolio styles start
 /*icons start*/
 
 
-.icon-social-media {
+.icon-social-media-crew {
   display: flex;
   align-items: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 10%;
+
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   transition-duration: 0.3s;
-  fill: var(--secondary-font-color);
+  fill: var(--logo-white-font-color);
+  background-color: white;
 }
-.icon-social-media:hover {
+.icon-social-media-crew:hover {
+  fill: #eeeeee;
+  background-color: var(--brand-color);
+}
+
+
+.icon-social-media-footer {
+  display: flex;
+  align-items: center;
+  padding: 22px;
+  cursor: pointer;
+  height: 20px;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  background-color:var(--secondary-font-color);
+}
+.icon-social-media-footer:hover {
   fill: var(--brand-color);
+  background-color: var(--brand-color);
 }
 
 .icon-our-customers {
   display: inline-flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   transition-duration: 0.3s;
   fill: var(--secondary-font-color);
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: var(--icon-color);
 }
 .icon-our-customers:hover {
   fill: var(--brand-color);
+}
+
+
+.twitter-icon {
 }
 /*icons end*/
