@@ -96,7 +96,10 @@ h4 {
   height: 30px;
   width: 20px;
 }
-
+.icon-contact-link:hover {
+  --color5: var(--brand-color);
+  --color2: var(--brand-color);
+}
 
 .nav-link-box {
   display: flex;
@@ -239,7 +242,6 @@ a.bottom-link:focus {
   justify-content: space-around;
   align-items: center;
   column-gap: 30px;
-
 }
 .rectangle-1 {
   height: 120px;
@@ -287,10 +289,10 @@ a.bottom-link:focus {
   display: inline-block;
 }
 .list-of-notes {
-display: flex;
-justify-content: center;
-column-gap: 30px;
-padding-left: 0;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  padding-left: 0;
 }
 
 /*our-strengths start*/
@@ -348,6 +350,24 @@ padding-left: 0;
 .oct {
   margin-bottom: 30px;
 }
+
+.icon-social-media-crew {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.icon-social-media-crew:hover {
+  background-color: var(--brand-color);
+  --color3: var(--logo-white-font-color);
+  --color1: var(--logo-white-font-color);
+}
 /*our-crew end*/
 
 /*Our customers start*/
@@ -356,11 +376,31 @@ padding-left: 0;
   padding-bottom: 94px;
 }
 .customers-logos {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-column-gap: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.icon-our-customers {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: var(--icon-color);
+  transition-duration: 0.3s;
+
+  fill: var(--icon-color);
+}
+
+.icon-our-customers:hover {
+  fill: var(--brand-color);
+  border-color: var(--brand-color);
+  --color1: var(--brand-color);
+  --color2: var(--brand-color);
 }
 
 /*Our customers end*/
@@ -370,7 +410,7 @@ column-gap: 30px;
 .little-black-box {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-decoration: none;
   background: var(--black-box-color);
@@ -378,7 +418,7 @@ column-gap: 30px;
 .bottom-things {
   display: flex;
   flex-direction: column;
-  padding: 60px 939px 60px 15px;
+  padding: 60px 60px 15px;
 }
 .bottom-things p {
   padding-bottom: 9px;
@@ -395,13 +435,28 @@ column-gap: 30px;
   display: inline-flex;
   flex-direction: row;
 }
-
-/*
-.bottom-things .join-us {
-  display: inline-block;
-  flex-direction: row;
+.join-us-title {
+  padding-top: 35px;
+  padding-bottom: 20px;
+  margin: 0;
 }
-*/
+
+.icon-social-media-footer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  transition-duration: 0.3s;
+  --color1: var(--logo-white-font-color);
+  --color3: var(--logo-white-font-color);
+  background-color: var(--secondary-font-color);
+}
+.icon-social-media-footer:hover {
+  background-color: var(--brand-color);
+}
+
 
 /*------
 
@@ -481,56 +536,6 @@ only portfolio styles start
 /*icons start*/
 
 
-.icon-social-media-crew {
-  display: flex;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 10%;
-
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  transition-duration: 0.3s;
-  fill: var(--logo-white-font-color);
-  background-color: white;
-}
-.icon-social-media-crew:hover {
-  fill: #eeeeee;
-  background-color: var(--brand-color);
-}
 
 
-.icon-social-media-footer {
-  display: flex;
-  align-items: center;
-  padding: 22px;
-  cursor: pointer;
-  height: 20px;
-  border-radius: 50%;
-  transition-duration: 0.3s;
-  background-color:var(--secondary-font-color);
-}
-.icon-social-media-footer:hover {
-  fill: var(--brand-color);
-  background-color: var(--brand-color);
-}
-
-.icon-our-customers {
-  display: inline-flex;
-  flex-wrap: wrap;
-  transition-duration: 0.3s;
-  fill: var(--secondary-font-color);
-  border: 1px solid;
-  border-radius: 4px;
-  border-color: var(--icon-color);
-}
-.icon-our-customers:hover {
-  fill: var(--brand-color);
-}
-
-
-.twitter-icon {
-}
 /*icons end*/
