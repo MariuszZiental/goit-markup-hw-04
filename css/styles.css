@@ -202,6 +202,13 @@ a.bottom-link:focus {
   row-gap: 40px;
 }
 
+.home {
+  background-image: url("/images/main-page/backgroud-picture.jpg");
+  background-color: rgba(47, 48, 58, 0.4);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
 .bigest-text {
   display: flex;
   justify-content: center;
@@ -450,13 +457,12 @@ a.bottom-link:focus {
   border-radius: 50%;
   transition-duration: 0.3s;
   --color1: var(--logo-white-font-color);
-  --color3: var(--logo-white-font-color);
+  --color3: white;
   background-color: var(--secondary-font-color);
 }
 .icon-social-media-footer:hover {
   background-color: var(--brand-color);
 }
-
 
 /*------
 
@@ -492,6 +498,8 @@ only portfolio styles start
   align-items: flex-start;
   margin-bottom: 50px;
   border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .pbt {
@@ -534,8 +542,5 @@ only portfolio styles start
 /*projects end*/
 
 /*icons start*/
-
-
-
 
 /*icons end*/
