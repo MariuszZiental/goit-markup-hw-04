@@ -87,6 +87,15 @@ h4 {
 .contact-link-box a {
   color: var(--main-font-color);
 }
+.icon-contact-link {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  width: 12px;
+}
+
 
 .nav-link-box {
   display: flex;
@@ -457,12 +466,6 @@ only portfolio styles start
 
 /*icons start*/
 
-.icon-contact-link {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
 
 .icon-social-media {
   display: flex;
