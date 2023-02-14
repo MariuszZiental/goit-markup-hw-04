@@ -64,6 +64,8 @@ h4 {
   margin-bottom: 10px;
   text-decoration: solid;
 }
+
+
 /*navbar and links start*/
 
 .navbar {
@@ -220,6 +222,7 @@ a.bottom-link:focus {
   padding: 10px 41px 10px 42px;
   letter-spacing: 0.06em;
   border-radius: 4px;
+  border: none;
   font-size: 16px;
   line-height: 1.87em;
   background-color: var(--brand-color);
@@ -361,13 +364,8 @@ a.bottom-link:focus {
 .icon-social-media-crew {
   display: flex;
   align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 10%;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
+  border-radius: 50%;
   transition-duration: 0.3s;
 }
 .icon-social-media-crew:hover {
@@ -447,18 +445,20 @@ a.bottom-link:focus {
   padding-bottom: 20px;
   margin: 0;
 }
+.svg-social-media {
+padding: 11px;
+}
 
-.icon-social-media-footer {
+
+.icon-social-media-footer{
   display: flex;
   align-items: center;
   cursor: pointer;
-  height: 44px;
-  width: 44px;
   border-radius: 50%;
   transition-duration: 0.3s;
   --color1: var(--logo-white-font-color);
-  --color3: white;
-  background-color: var(--secondary-font-color);
+  --color3: var(--logo-white-font-color);
+   background-color: var(--secondary-font-color);
 }
 .icon-social-media-footer:hover {
   background-color: var(--brand-color);
