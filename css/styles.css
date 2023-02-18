@@ -15,6 +15,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -65,7 +66,6 @@ h4 {
   text-decoration: solid;
 }
 
-
 /*navbar and links start*/
 
 .navbar {
@@ -97,10 +97,6 @@ h4 {
   margin-right: 10px;
   height: 30px;
   width: 20px;
-}
-.icon-contact-link:hover {
-  --color5: var(--brand-color);
-  --color2: var(--brand-color);
 }
 
 .nav-link-box {
@@ -138,6 +134,11 @@ h4 {
 }
 a.top-link:hover {
   color: var(--brand-color);
+}
+a.top-link:hover .icon-contact-link {
+  color: var(--brand-color);
+  --color5: var(--brand-color);
+  --color2: var(--brand-color);
 }
 a.top-link:active {
   color: var(--brand-color);
@@ -433,7 +434,7 @@ a.bottom-link:focus {
 .join-us {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   color: var(--logo-white-font-color);
   text-transform: uppercase;
 }
@@ -447,11 +448,10 @@ a.bottom-link:focus {
   margin: 0;
 }
 .svg-social-media {
-padding: 11px;
+  padding: 11px;
 }
 
-
-.icon-social-media-footer{
+.icon-social-media-footer {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -459,7 +459,7 @@ padding: 11px;
   transition-duration: 0.3s;
   --color1: var(--logo-white-font-color);
   --color3: var(--logo-white-font-color);
-   background-color: var(--secondary-font-color);
+  background-color: var(--secondary-font-color);
 }
 .icon-social-media-footer:hover {
   background-color: var(--brand-color);
@@ -514,15 +514,11 @@ only portfolio styles start
 
 .portfolio-page-buttons li {
   display: inline-block;
-  line-height: 1.62em;
-  letter-spacing: 0.03em;
-  cursor: pointer;
   padding-top: 94px;
   padding-bottom: 50px;
-
+  padding-left: 8px;
   border: none;
   text-decoration: none;
-  text-align: center;
   color: var(--logo-white-font-color);
   transition-duration: 0.3s;
 }
@@ -531,14 +527,18 @@ only portfolio styles start
   color: var(--logo-white-font-color);
   border-color: var(--brand-color);
   border: 0px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .filter-btn {
   padding: 6px 22px 6px 22px;
   border: none;
-  margin-left: 8px;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  line-height: 1.62em;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 /*projects end*/
 
