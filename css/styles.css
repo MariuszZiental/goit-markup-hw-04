@@ -170,13 +170,8 @@ a.bottom-link:focus {
   align-items: center;
   text-decoration: none;
   padding-left: 215px;
-
-  /*padding-top: 24px;
-  padding-bottom: 25px;
-  padding-left: 15px;
-  width: 145px;
-  height: 31px;*/
 }
+
 .logo-nav {
   display: flex;
   flex-direction: row;
@@ -206,10 +201,15 @@ a.bottom-link:focus {
 }
 
 .home {
-  background-image: url("/images/main-page/backgroud-picture.jpg");
-  background-color: rgba(47, 48, 58, 0.4);
+  background-image: 
+  linear-gradient(
+    to bottom,
+    rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url("/images/main-page/backgroud-picture.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+
   width: 100%;
 }
 .bigest-text {
